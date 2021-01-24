@@ -19,7 +19,7 @@ else
 end
   
   while count < array.length do
-     total = yield(total,array[count])
+    total = yield(total,array[count])
     count += 1
   end
   return total
