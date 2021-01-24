@@ -10,11 +10,11 @@ end
 
 def reduce (array, *starting_number)
 
-if starting_number
+if starting_number[0]
   count = 0
-  total = starting_number
+  total = starting_number[0]
 else
-  total = array
+  total = array[0]
   count = 1
 end
   
