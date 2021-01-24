@@ -19,7 +19,7 @@ def reduce(s, n = 0)
   return new
 end
 
-reduce([1, 2, 3], 100)
+reduce([1, 2, 3], 100){
 
 
 
