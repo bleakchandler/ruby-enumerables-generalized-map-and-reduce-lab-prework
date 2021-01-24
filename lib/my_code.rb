@@ -16,7 +16,7 @@ def reduce (array, starting_number = 0)
     count += 1
   end
  }
-  return new
+  return count
 end
 
 reduce([1,2,3], 100){|memo, n| memo + n}
