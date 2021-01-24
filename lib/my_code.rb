@@ -18,8 +18,8 @@ def reduce (array, starting_number = 0)
   return starting_point
 end
 
-reduce([1,2,3], 100){|array, starting_number| array + starting_number}
-
+ source_array = [1,2,3]
+    starting_point = 100
 
  value =  yield(value,array[count])
 
