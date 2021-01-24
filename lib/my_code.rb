@@ -8,13 +8,13 @@ def map(s)
   return new
 end
 
-def reduce (array, starting_number = false)
+def reduce (array, *starting_number)
 
-if starting_number[0]
+if starting_number
   count = 0
-  total = starting_number[0]
+  total = starting_number
 else
-  total = array[0]
+  total = array
   count = 1
 end
   
