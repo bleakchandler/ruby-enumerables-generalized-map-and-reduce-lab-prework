@@ -12,7 +12,10 @@ def reduce (array, starting_number = 0)
   count = 0
   total = starting_number
 
-if !starting_number[0]
+if starting_number[0]
+   count = 0
+  total = starting_number
+else
   puts "hi"
 end
   
