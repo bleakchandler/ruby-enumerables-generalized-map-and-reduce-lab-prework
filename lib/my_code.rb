@@ -10,9 +10,9 @@ end
 
 def reduce (array, starting_number = 0)
 
-if starting_number[0]
+if starting_number
   count = 0
-  total = starting_number [0]
+  total = starting_number
 else
   total = array[0]
   count = 1
