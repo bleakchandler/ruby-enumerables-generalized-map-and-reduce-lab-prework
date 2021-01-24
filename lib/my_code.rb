@@ -8,10 +8,11 @@ def map(s)
   return new
 end
 
-def reduce 
+def reduce (array, starting_number = 0)
   new = []
-  count = 0
-  while i < s.length {
+  count = 
+  starting_point = starting_number
+  while i < array.length {
      value =  yield(value,array[count])
     count += 1
   }
