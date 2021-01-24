@@ -22,30 +22,3 @@ source_array = [1,2,3]
 starting_point = 100
     
 reduce(source_array, starting_point){|memo, n| memo + n}
-
-
-
- value =  yield(value,array[count])
-
-def reduce_to_total(source_array, starting_point = 0)
-  
-  total = starting_point
-  
-  source_array.length.times { 
-     |index|
-  
-     total = source_array[index] + total
-   }
-  total
-
-
-def map_to_negativize(source_array)
-#pipe "|" : It's the same as defining a method, only it's not stored beyond the method that accepts a block.
-
-  source_array.length.times { 
-    |index|
-     source_array[index]=source_array[index] * -1
-   }
-   source_array
-   
-end
