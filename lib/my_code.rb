@@ -8,18 +8,18 @@ def map(s)
   return new
 end
 
-def reduce(array,*starting)
-  if starting[0]
-    value = starting[0]
-    count = 0
-    else
-    value = array[0]
-    count = 1
-  end
+def reduce (array, starting_number = 0)
+  count = 0
+  starting_point = starting_number
 
-  while count < array.count do
-    value =  yield(value,array[count])
-    count+=1
-  end 
- value
- end
+  while count < array.length do
+     starting_point = yield(starting_point,array[count])
+    count += 1
+  end
+  return starting_point
+end
+
+source_array = [1,2,3]
+starting_point = 100
+    
+reduce(source_array, starting_point){|memo, n| memo + n}
