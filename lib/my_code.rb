@@ -12,7 +12,7 @@ def reduce (array, *starting_number)
 
 if starting_number[0]
   count = 0
-  total = starting_numbber
+  total = starting_numbber[0]
 else
   total = array[0]
   count = 1
