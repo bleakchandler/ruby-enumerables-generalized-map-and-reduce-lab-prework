@@ -13,6 +13,8 @@ def reduce (array, starting_number = 0)
   starting_point = starting_number
   if !array[starting_point]
        return false
+   if array[starting_point]
+       return true
   while count < array.length do
      starting_point = yield(starting_point,array[count])
     count += 1
@@ -20,7 +22,7 @@ def reduce (array, starting_number = 0)
   return starting_point
 end
 
-#source_array = [1,2,3]
-#starting_point = 100
+source_array = [1,2,3]
+starting_point = 100
     
-#reduce(source_array, starting_point){|memo, n| memo + n}
+reduce(source_array, starting_point){|memo, n| memo + n}
