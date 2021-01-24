@@ -11,7 +11,7 @@ end
 def reduce(s, n = 0)
   new = n
  s.each{ |number, starting_num|
-    new = yield(s)
+    new = 1+1
   end
  }
   return new
