@@ -22,3 +22,4 @@ def reduce(array,*starting)
     count+=1
   end 
  value
+ end
