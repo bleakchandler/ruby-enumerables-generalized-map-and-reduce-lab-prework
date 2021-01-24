@@ -15,7 +15,7 @@ def reduce (array, starting_number = 0)
      starting_point = yield(starting_point,array[count])
     count += 1
   end
-  return count
+  return starting_point
 end
 
 reduce([1,2,3], 100){|array, starting_number| array + starting_number}
