@@ -11,10 +11,11 @@ end
 def reduce (array, starting_number = 0)
 
 if starting_number[0]
-   count = 0
+  count = 0
   total = starting_number
 else
-  puts "hi"
+  total = array[0]
+  count = 1
 end
   
   while count < array.length do
