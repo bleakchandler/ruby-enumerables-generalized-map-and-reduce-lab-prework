@@ -18,10 +18,12 @@ def reduce (array, starting_number = 1)
   return starting_point
 end
 
- source_array = [1,2,3]
-    starting_point = 100
+source_array = [1,2,3]
+starting_point = 100
     
-    reduce(source_array, starting_point){|memo, n| memo + n}
+reduce(source_array, starting_point){|memo, n| memo + n}
+
+
 
  value =  yield(value,array[count])
 
