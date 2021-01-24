@@ -19,7 +19,7 @@ def reduce(s, n = 0)
   return new
 end
 
-reduce(source_array, starting_point){|memo, n| memo + n}
+reduce([1,2,3], 100){|memo, n| memo + n}
 
 
 
