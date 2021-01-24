@@ -15,6 +15,7 @@ def reduce (array, starting_number = 0)
 if !starting_number[0]
   total = array[0]
   count = 1
+end
   
   while count < array.length do
      total = yield(total,array[count])
