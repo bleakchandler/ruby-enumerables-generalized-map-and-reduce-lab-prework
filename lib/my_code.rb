@@ -17,7 +17,10 @@ def reduce(s, n = 0)
   return new
 end
 
+reduce([1, 2, 3], 100){|n| n * n}
+
 reduce([1,2,3], 100){|memo, n| memo + n}
+
 
 
 
