@@ -12,7 +12,7 @@ def reduce(s, n = 0)
   new = n
  
   starting = n
- s.each{ |number, nusmber2|
+ s.each{ |number, starting num|
     new = yield(s)
   end
  }
