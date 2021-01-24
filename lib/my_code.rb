@@ -20,6 +20,8 @@ end
 
  source_array = [1,2,3]
     starting_point = 100
+    
+    source_array, starting_point){|memo, n| memo + n}
 
  value =  yield(value,array[count])
 
