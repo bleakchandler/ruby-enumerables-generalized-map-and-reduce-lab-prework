@@ -15,7 +15,6 @@ def reduce (array, starting_number = 0)
      starting_point = yield(starting_point,array[count])
     count += 1
   end
- }
   return count
 end
 
