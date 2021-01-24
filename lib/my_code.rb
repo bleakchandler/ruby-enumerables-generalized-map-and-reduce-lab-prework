@@ -23,7 +23,7 @@ end
   return total
 end
 
-source_array = [1,2,3]
-starting_point = 100
-    
+ source_array = [ false, nil, nil, nil, true]
+
+
 reduce(source_array, starting_point){|memo, n| memo + n}
