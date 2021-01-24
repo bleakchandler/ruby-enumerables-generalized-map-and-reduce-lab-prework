@@ -29,7 +29,7 @@ end
 
 source_array = [1,2,3]
 starting_point = 100
-reduce(source_array, st){|memo, n| memo + n}
+reduce(source_array, starting_point){|memo, n| memo + n}
 
 
 
