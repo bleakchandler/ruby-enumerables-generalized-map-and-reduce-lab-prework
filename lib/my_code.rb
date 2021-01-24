@@ -12,14 +12,14 @@ def reduce(s, n = 0)
   new = n
  
   starting = n
- s.each{ |number|
+ s.each{ |number, nusmber2|
     new = yield(s)
   end
  }
   return new
 end
 
-reduce([1, 2, 3], 100){
+reduce(source_array, starting_point){|memo, n| memo + n}
 
 
 
