@@ -8,7 +8,7 @@ def map(s)
   return new
 end
 
-def reduce (array, starting_number = true)
+def reduce (array, starting_number = false)
 
 if starting_number[0]
   count = 0
