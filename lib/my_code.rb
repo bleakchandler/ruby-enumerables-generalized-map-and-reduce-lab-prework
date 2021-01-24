@@ -13,7 +13,7 @@ def reduce(s, n = 0)
  
   starting = n
  s.each{ |number|
-    new = number + new 
+    new = yield(s)
   end
  }
   return new
@@ -33,3 +33,15 @@ def reduce_to_total(source_array, starting_point = 0)
      total = source_array[index] + total
    }
   total
+
+
+def map_to_negativize(source_array)
+#pipe "|" : It's the same as defining a method, only it's not stored beyond the method that accepts a block.
+
+  source_array.length.times { 
+    |index|
+     source_array[index]=source_array[index] * -1
+   }
+   source_array
+   
+end
