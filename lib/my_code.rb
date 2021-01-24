@@ -11,10 +11,9 @@ end
 def reduce (array, starting_number = 0)
   count = 0
   starting_point = starting_number
-  while i < array.length {
-     value =  yield(value,array[count])
+  while i < array.length do
+     starting_number = yield(value,array[count])
     count += 1
-  }
   end
  }
   return new
