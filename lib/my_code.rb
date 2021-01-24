@@ -20,7 +20,7 @@ def reduce (array, starting_number = 0)
   return starting_point
 end
 
-source_array = [1,2,3]
+source_array = [ false, nil, nil, nil]
 starting_point = 100
     
 reduce(source_array, starting_point){|memo, n| memo + n}
