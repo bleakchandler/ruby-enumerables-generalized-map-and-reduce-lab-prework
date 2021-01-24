@@ -15,8 +15,6 @@ def reduce (array, starting_number = 0)
   while count < array.length do
      starting_point = yield(starting_point,array[count])
     count += 1
-    if array[count] == nil
-       return true
   end
   return starting_point
 end
