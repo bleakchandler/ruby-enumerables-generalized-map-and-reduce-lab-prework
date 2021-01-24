@@ -8,14 +8,13 @@ def map(s)
   return new
 end
 
-def reduce(s, n = 0)
-new = []
-  i = 0
-  while i < s.length do
-    new.push(yield(s[i])) 
-    i += 1
-
-    value =  yield(value,array[count])
+def reduce 
+  new = []
+  count = 0
+  while i < s.length {
+     value =  yield(value,array[count])
+    count += 1
+  }
   end
  }
   return new
@@ -26,7 +25,7 @@ reduce([1, 2, 3], 100){|n| n * n}
 reduce([1,2,3], 100){|memo, n| memo + n}
 
 
-
+ value =  yield(value,array[count])
 
 def reduce_to_total(source_array, starting_point = 0)
   
