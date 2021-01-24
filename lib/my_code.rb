@@ -9,9 +9,13 @@ def map(s)
 end
 
 def reduce(s, n = 0)
-  new = n
- s.each{ |number, starting_num|
-    yield(s[i])
+new = []
+  i = 0
+  while i < s.length do
+    new.push(yield(s[i])) 
+    i += 1
+
+    value =  yield(value,array[count])
   end
  }
   return new
