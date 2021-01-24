@@ -18,7 +18,7 @@ def reduce (array, starting_number = 0)
   return count
 end
 
-reduce([1,2,3], 100){|memo, n| memo + n}
+reduce([1,2,3], 100){|array, starting_number| array + starting_number}
 
 
  value =  yield(value,array[count])
